@@ -35,12 +35,13 @@ function removeElement(btn){
 
 function createElement(){
 	var li = document.createElement("li");
+	li.className = "element";
 	var delb = document.createElement("input");
 	delb.type = "button";
 	delb.className = "del";
 	delb.value = "Delete";
 	toggleDone(li);
-	removeElement(btn);
+	removeElement(delb);
 	li.appendChild(document.createTextNode(input.value))
 	li.appendChild(delb);
 	list.appendChild(li);
